@@ -1,0 +1,929 @@
+html {
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(83, 41, 100, 0.9);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  cursor: url('./img/MouseLeeSin.png'), default;
+}
+
+div.background {
+  background: url('./img/Landa-degli-Evocatori.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+/* SOCIAL ---------------------------------------------------------------------------------- */
+
+div.social{
+  position: fixed;
+  bottom: 1.5%;
+  right: 0;
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+p.social{
+  width: fit-content;
+  font-size: 3.7rem;
+  padding: 0 0.3rem;
+  border-radius: 50%;
+  transform: rotate(270deg);
+  position: fixed;
+  bottom: 1.5%;
+  right: 2%;
+  cursor: url('./img/MouseLeeSin.png'), default;;
+  animation-name: comeback;
+  animation-duration: 1s;
+}
+
+@keyframes comeback{
+  from {
+    transform: rotate(450deg);
+  } to {
+    transform: rotate(270deg);
+  }
+}
+
+p.social.onclick {
+  max-width: fit-content;
+  height: fit-content;
+  border-radius: 15px 15px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  animation-name: rotate;
+  animation-duration: 1s;
+  position: fixed;
+  bottom: 3%;
+  right: 2%;
+  transform: rotate(90deg);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(270deg);
+  } to {
+    transform: rotate(450deg);
+  }
+  
+}
+
+ul.social {
+  font-size: 3rem;
+  display: none;
+  max-width: fit-content;
+  height: fit-content;
+  position: fixed;
+  bottom: 1.5%;
+  right: 7%;
+}
+
+ul.display{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  animation-name: visibility;
+  animation-duration: 1s;
+}
+
+@keyframes visibility {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  } to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+li.social{
+  margin: 0 1.2rem;
+  padding: 0.7rem 1.2rem;
+  background: rgba(0, 0, 0, 0.7 );
+  border-radius: 20%;
+}
+
+.icon-social{
+  color: rgba(96, 40, 147, 0.8);
+}
+
+/* NAVBAR --------------------------------------------------------------------------------------------*/
+
+div.navbar {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  background: black;
+  border-bottom: 1px white solid;
+}
+
+div.navbar-logo{
+  margin-top: 1rem;
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+
+}
+
+img.navbar {
+  height: 100%; 
+  margin-left: 10%;
+  box-shadow: 0px 20px 4px 0.5px #59286d;
+}
+
+div.navbar-elements {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  margin-left: auto;
+  justify-content: left;
+  align-items: center;
+}
+
+h6.navbar-text{
+  color: white;
+  margin: 0;
+  padding: 0 1rem;
+  font-size: 1.3rem;
+  cursor: url('./img/MouseLeeSin.png'), default;;
+}
+h6.navbar-text:before {
+  animation-name: fromTop;
+  animation-duration: 1.2s;
+}
+
+h6.navbar-text:hover {
+  animation-name: color;
+  animation-duration: 2s;
+}
+
+@keyframes color {
+  0% {
+    color: white;
+  }
+
+  10% {
+    color: violet;
+  }
+
+  40% {
+    color: darkviolet;
+  }
+
+  60% {
+    color: #59286d;
+  }
+
+  70% {
+    color: darkviolet;
+  }
+
+  80% {
+    color: violet;
+  }
+}
+
+@keyframes fromTop{
+  from{
+    transform: translateX(-80px);
+  } to {
+    transform: translate(0);
+  }
+}
+
+#contactsClick {
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: #59286d;
+  box-shadow: 0px 0px 3px 1px;
+}
+
+#contactsClick:hover {
+  box-shadow: 0px 0px 4px 1.5px;
+}
+
+/* FIRSTCOMPONENT ------------------------------------------------------------------------------------*/
+
+div.firstcomponent {
+ width: 100%;
+ height: 110vh;
+ margin-top: 0.2%;
+ box-shadow: 0px 0px -2px 2px;
+}
+
+div.firstcomponent-flex{
+  width: 100%;
+  height: 110vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+div.firstcomponent-text{
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+h4.firstcomponent{
+  font-size: 3.7rem;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 2.5rem;
+  margin-left: 2rem;
+  color: white;
+  backdrop-filter: blur(3px);
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: 2px 3px 5px 1px black;
+  animation-name: fromLeft;
+  animation-duration: 1.5s;
+}
+
+@keyframes fromLeft{
+  from {
+    transform: translateX(-50%);
+    visibility: hidden;
+    opacity: 0;
+  } to {
+    transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+h4.FSH {
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+  color: black;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 3px 3px 4px 1px black;
+  margin-top: 1rem;
+}
+
+
+
+/* LANDING PAGE ----------------------------------------------------------------------------- */
+
+
+
+/* ABOUT ME ----------------------------------------------------------------------------- */
+
+div.aboutme{
+  padding-bottom: 7rem;
+  width: 100%;
+  height: 110vh;
+}
+
+h4.aboutme {
+  height: fit-content;
+  font-size: 2.6rem;
+  text-align: left;
+  letter-spacing: 0.2rem;
+  padding-left: 2rem;
+  position: relative;
+  top: 65px;
+  z-index: 2;
+}
+
+div.aboutme-img-div{
+  width: 100%;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 33% 67%;
+  grid-template-rows: 100%;
+  backdrop-filter:  blur(2px);
+  border: solid white 1px;
+  border-right: none;
+  border-left: none;
+}
+
+h5.aboutme {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  padding: 0.7rem 0;
+  margin: 1rem 0;
+}
+
+div.aboutme-first-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+div.aboutme-first-item.animation{
+  animation-name: LeftToRight;
+  animation-duration: 2.5s;
+}
+
+@keyframes LeftToRight{
+  from {
+    transform: translateX(200%);
+    backdrop-filter: blur(5px);
+  } to {
+    transform: translateX(0);
+    backdrop-filter: blur(5px);
+  }
+}
+
+img.aboutme {
+  width: 90%;
+  height: 55vh;
+  margin: 2rem 2rem;
+  margin-bottom: 0;
+  box-shadow: 0px 0px 5px 1px white;
+}
+
+div.aboutme-second-item {
+  width: 100%;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  overflow-y: scroll;
+  cursor: s-resize;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.aboutme-second-item::-webkit-scrollbar{
+  display: none;
+}
+
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
+div.aboutme-grid-one{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+div.aboutme-grid-two{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+div.aboutme-grid-three{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+img.img-grid {
+  width: 40%;
+  margin-bottom: 2rem;
+  border: solid 1px white;
+  box-shadow: 0px 0px 2px 1.2px blue;
+}
+
+img.img-grid.visibility{
+  animation-name: visibility;
+  animation-duration: 4s;
+}
+
+a.aboutme{
+  width: 60%;
+}
+
+a.aboutme:hover {
+  color: black;
+}
+
+p.aboutme{
+  font-size: 2rem;
+  width: 100%;
+  padding: 0.2rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  z-index: 2;
+  border-bottom: 1px solid white;
+}
+
+p.aboutme.goDown {
+  animation-name: GoDown;
+  animation-duration: 1.2s;
+}
+
+@keyframes GoDown{
+ 
+ 0% {
+  transform: translateY(0);
+  border: none;
+ } 50% {
+  transform: translateY(-150px);
+  border: none;
+ } 100% {
+  transform: translate(0);
+ }
+}
+
+/* -- ABOUT ME DOPPIAGGI -------------------------------------------------------------*/
+
+img.brVio {
+ box-shadow: 0px 0px 2px 1.2px violet;
+}
+
+/* MAIN CONTENTS ---------------------------------------------------------------------*/
+
+div.maincontents {
+  margin-top: 5rem;
+  width: 100%;
+  height: 90vh;
+}
+
+h4.maincontents{
+  width: 100%;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 7rem;
+}
+
+div.maincontents-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+div.maincontents-container-item{
+  width: 30%;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10% 10% 5% 5%;
+}
+
+img.maincontents{
+  width: 65%;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+p.maincontents{
+  background: rgba(255, 255, 255, 0.5);
+  font-weight: bold;
+  font-size: 1.4rem;
+  letter-spacing: 0.3rem;
+  border-radius: 0 0 15% 15%;
+}
+
+a.maincontents {
+  color: black;
+}
+
+a.maincontents:hover {
+  letter-spacing: 0.5rem;
+  text-decoration: underline;
+  color: #752d8d;
+}
+
+
+/* LINKS ----------------------------------------------------------------*/
+
+div.links {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  margin-top: 3rem;
+}
+
+h4.links {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  backdrop-filter: blur(4px);
+}
+
+
+div.links-second-channel{
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.links-social{
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+a.links {
+  width: 100%;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+}
+
+p.links {
+  color: white;
+  letter-spacing: 0.2rem;
+}
+
+div.links-social-icons {
+  height: 100%;
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer.links{
+  margin-top: 7rem;
+  background: rgba(255, 255, 255, 0.3);
+  letter-spacing: 0.3rem;
+}
+
+.links-item{
+ color: #a12828;
+ font-size: 6rem;
+}
+
+/* MEDIA RESIZE -------------------------*/
+
+
+@media only screen and (max-width: 1200px) {
+ 
+
+ div.navbar-logo{
+  width: 30%;
+ }
+
+ div.navbar-elements {
+  margin-left: 0;
+ }
+
+  h6.navbar-text{
+    font-size: 1.2rem;
+  }
+}
+
+/* main contents-------*/
+
+  p.maincontents {
+    font-size: 0.8rem;
+  }
+
+@media only screen and (max-width: 800px) {
+
+
+/* SOCIAL------------*/
+
+ p.social{
+    font-size: 3.7rem;       
+  }
+
+  ul.social {
+    bottom: 2.8%;
+    right:10%;
+  }
+
+  li.social{
+    font-size: 1.8rem;
+    margin: 0 0.5rem;
+  }
+
+
+  /* first COMPONENT -----*/
+
+  div.firstcomponent{
+    height: 80vh;
+  }
+
+
+  /* ABOUTME -----------*/
+
+  div.aboutme-img-div {
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+   h4.aboutme{
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  img.aboutme{
+    width: 60%;
+    height: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  div.aboutme-first-item.animation{
+    animation: none;
+  }
+
+  div.aboutme-second-item{
+    height: 50vh;
+  }
+
+  /* main contents-------*/
+
+
+  div.maincontents{
+    margin-top: 10rem;
+    height: 80vh;
+  }
+
+  div.maincontents-container{
+    padding-top: 5rem;
+  }
+
+  p.maincontents {
+    font-size: 0.8rem;
+    letter-spacing: 0;
+  }
+
+
+/* NAVBAR-------------*/
+  img.navbar{
+    height: 70%;
+    box-shadow: none;
+  }
+
+  h6.navbar-text{
+    font-size: 1rem;
+  }
+
+/* FIRST COMPONENT----- */
+
+  h4.firstcomponent {
+    font-size: 2.3rem;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+
+
+/*SOCIAL ------------*/
+
+
+
+  p.social{
+    font-size: 3rem;
+    transform: rotate(0);
+    animation-name: comebackdue;
+    animation-duration: 1s;    
+  }
+
+  @keyframes comebackdue{
+  from {
+    transform: rotate(180deg);
+  } to {
+    transform: rotate(0deg);
+  }
+}
+
+   p.social.onclick{
+    transform: rotate(180deg);
+    animation-name: rotatedue;
+    animation-duration: 1s;
+   }
+
+   @keyframes rotatedue {
+  from {
+    transform: rotate(0deg);
+  } to {
+    transform: rotate(180deg);
+  }
+
+  }
+
+  ul.social {
+    flex-direction: column;
+    bottom: 10%;
+    right: 4%;
+  }
+
+  li.social {
+    background: none;
+    font-size: 2rem;
+    margin: 1rem 0;
+    padding: 0;
+  }
+  
+
+
+/* NAVBAR-------------*/
+  div.navbar{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+  }
+
+  div.navbar-logo{
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img.navbar{
+    height: 80%;
+    box-shadow: none;
+    margin: 0;
+  }
+
+  div.navbar-elements{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+   h6.navbar-text{
+    margin: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  /* first component ----*/
+
+  div.firstcomponent{
+    height: 70vh;
+  }
+
+  div.firstcomponent-text {
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  div.firstcomponent-flex{
+    align-items: center;
+  }
+
+  h4.firstcomponent {
+    margin-left: 0;
+  }
+
+  /* ABOUTME ------------*/
+
+
+  div.aboutme {
+    height: 130vh;
+  }
+
+  div.aboutme-img-div {
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h4.aboutme{
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  img.aboutme{
+    width: 70%;
+    margin-bottom: 0.5rem;
+  }
+
+  div.aboutme-header{
+    margin-top: 10rem;
+  }
+
+  div.aboutme-first-item.animation{
+    animation: none;
+  }
+
+
+  /* MAIN CONTENTS--------*/
+
+  div.maincontents{
+    margin-top: 20rem;
+    width: 100%;
+  }
+
+  h4.maincontents{
+    margin-bottom: 1rem;
+  }
+
+  div.maincontents-container{
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.2);
+    padding-bottom: 10rem;
+  }
+
+  div.maincontents-container-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: none;
+  }
+
+  img.maincontents{
+    width: 90%;
+  }
+
+  p.maincontents{
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+  }
+
+
+
+  /* LINKS----------*/
+
+
+  div.links {
+    margin-top: 30rem;
+    height: 100vh;
+  }
+  .links-item {
+    font-size: 3rem;
+  }
+
+  footer.links {
+    margin-top: 30%;
+  }
+
+}
