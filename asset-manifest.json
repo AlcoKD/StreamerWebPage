@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/starter-project/static/css/main.325e6a3d.chunk.css",
+    "main.js": "/starter-project/static/js/main.60a2a365.chunk.js",
+    "main.js.map": "/starter-project/static/js/main.60a2a365.chunk.js.map",
+    "runtime-main.js": "/starter-project/static/js/runtime-main.7c9f3e45.js",
+    "runtime-main.js.map": "/starter-project/static/js/runtime-main.7c9f3e45.js.map",
+    "static/js/2.43a4a8ed.chunk.js": "/starter-project/static/js/2.43a4a8ed.chunk.js",
+    "static/js/2.43a4a8ed.chunk.js.map": "/starter-project/static/js/2.43a4a8ed.chunk.js.map",
+    "static/js/3.64c7cf00.chunk.js": "/starter-project/static/js/3.64c7cf00.chunk.js",
+    "static/js/3.64c7cf00.chunk.js.map": "/starter-project/static/js/3.64c7cf00.chunk.js.map",
+    "index.html": "/starter-project/index.html",
+    "static/css/main.325e6a3d.chunk.css.map": "/starter-project/static/css/main.325e6a3d.chunk.css.map",
+    "static/js/2.43a4a8ed.chunk.js.LICENSE.txt": "/starter-project/static/js/2.43a4a8ed.chunk.js.LICENSE.txt",
+    "static/media/KYRENIS-DOPP.4e55245b.png": "/starter-project/static/media/KYRENIS-DOPP.4e55245b.png",
+    "static/media/KYRENIS.b29ee044.png": "/starter-project/static/media/KYRENIS.b29ee044.png",
+    "static/media/index.css": "/starter-project/static/media/MouseLeeSin.de763348.png",
+    "static/media/kyrenis-profile.cadfb509.jpeg": "/starter-project/static/media/kyrenis-profile.cadfb509.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7c9f3e45.js",
+    "static/js/2.43a4a8ed.chunk.js",
+    "static/css/main.325e6a3d.chunk.css",
+    "static/js/main.60a2a365.chunk.js"
+  ]
+}
