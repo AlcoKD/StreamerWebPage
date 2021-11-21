@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/StreamerWebPage/static/css/main.4131d507.chunk.css",
+    "main.css": "/StreamerWebPage/static/css/main.9b5a669d.chunk.css",
     "main.js": "/StreamerWebPage/static/js/main.60a2a365.chunk.js",
     "main.js.map": "/StreamerWebPage/static/js/main.60a2a365.chunk.js.map",
     "runtime-main.js": "/StreamerWebPage/static/js/runtime-main.b012a4dc.js",
@@ -10,7 +10,7 @@
     "static/js/3.64c7cf00.chunk.js": "/StreamerWebPage/static/js/3.64c7cf00.chunk.js",
     "static/js/3.64c7cf00.chunk.js.map": "/StreamerWebPage/static/js/3.64c7cf00.chunk.js.map",
     "index.html": "/StreamerWebPage/index.html",
-    "static/css/main.4131d507.chunk.css.map": "/StreamerWebPage/static/css/main.4131d507.chunk.css.map",
+    "static/css/main.9b5a669d.chunk.css.map": "/StreamerWebPage/static/css/main.9b5a669d.chunk.css.map",
     "static/js/2.43a4a8ed.chunk.js.LICENSE.txt": "/StreamerWebPage/static/js/2.43a4a8ed.chunk.js.LICENSE.txt",
     "static/media/KYRENIS-DOPP.4e55245b.png": "/StreamerWebPage/static/media/KYRENIS-DOPP.4e55245b.png",
     "static/media/KYRENIS.b29ee044.png": "/StreamerWebPage/static/media/KYRENIS.b29ee044.png",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.b012a4dc.js",
     "static/js/2.43a4a8ed.chunk.js",
-    "static/css/main.4131d507.chunk.css",
+    "static/css/main.9b5a669d.chunk.css",
     "static/js/main.60a2a365.chunk.js"
   ]
 }
